@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Uber Garage</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="username">Enter your username</string>
+    <string name="password">Enter your password</string>
+    <string name="passwordRepeat">Repeat your password</string>
+    <string name="email">Enter your email</string>
+    <string name="settings">Settings</string>
+    <string name="filter">Filters</string>
+    <string name="lift">Lift</string>
+    <string name="tools">Tools</string>
+    <string name="climate">Climate Control</string>
+    <string name="ditch">Hole</string>
+    <string name="security">Security</string>
+    <string name="tireMount">Tire Mount</string>
+    <string name="meets">Cars &amp; Coffee</string>
+    <string name="filterBtn">Filter</string>
+    <string name="radius">Search radius</string>
+    <string name="locationHint">Enter the location of your offer</string>
+    <string name="profile">Profile</string>
+    <string name="price">Price: </string>
+    <string name="priceValue">0.0 </string>
+    <string name="description">Enter a short description about your offer.</string>
+    <string name="location">Location: </string>
+    <string name="placeHolder">value_P_H</string>
+    <string name="rent">Rent out</string>
+    <string name="add">Add offer</string>
+    <string name="edit">Edit offer</string>
+    <string name="sortType">Sort type: </string>
+    <string name="descending">Descending</string>
+    <string name="ascending">Ascending</string>
+    <string name="locationDisabled">Please enable your GPS network.</string>
+    <string name="enableGps">Enable</string>
+    <string name="cancel">Cancel</string>
+    <string name="gaps">17dp</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <Switch
+        android:id="@+id/switch_tools"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/tools"
+        android:textSize="18sp" />
+
+    <Switch
+        android:id="@+id/switch_lift"
+        android:layout_below="@id/switch_tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/lift"
+        android:textSize="18sp"/>
+
+    <Switch
+        android:id="@+id/switch_hole"
+        android:layout_below="@id/switch_lift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/ditch"
+        android:textSize="18sp"/>
+
+    <Switch
+        android:id="@+id/switch_ac"
+        android:layout_below="@id/switch_hole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/climate"
+        android:textSize="18sp"/>
+
+    <Switch
+        android:id="@+id/switch_security"
+        android:layout_below="@id/switch_ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/security"
+        android:textSize="18sp"/>
+
+    <Switch
+        android:id="@+id/switch_tire_mount"
+        android:layout_below="@id/switch_security"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/tireMount"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/filter_button"
+        android:layout_below="@id/switch_tire_mount"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_rect"
+        android:text="@string/filterBtn"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/settings_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

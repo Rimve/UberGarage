@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    card_view:contentPadding="2dp"
+    card_view:cardCornerRadius="20dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_gradient_outline">
+
+        <ProgressBar
+            android:id="@+id/card_loading"
+            android:indeterminate="true"
+            android:layout_margin="4dp"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_margin="4dp"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/round_outline"
+            android:outlineProvider="background"/>
+
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_toEndOf="@id/card_image"
+            android:layout_marginStart="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/card_location"
+            android:layout_toEndOf="@id/card_image"
+            android:layout_marginStart="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorAccent"
+            android:text="@string/location"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/card_location_value"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/card_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:text="@string/placeHolder"/>
+
+        <TextView
+            android:id="@+id/card_price"
+            android:layout_alignBaseline="@id/card_price_value"
+            android:layout_alignStart="@id/card_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorAccent"
+            android:text="@string/price"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/card_price_value"
+            android:layout_alignStart="@id/card_location_value"
+            android:layout_below="@id/card_location_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:text="@string/placeHolder"/>
+
+        <CheckBox
+            android:id="@+id/card_feature_tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_price"
+            android:layout_alignStart="@id/card_location"
+            android:text="@string/tools"
+            android:layout_marginTop="8sp"
+            android:clickable="false"
+            android:checked="true"
+            android:textColor="@color/colorAccent"
+            android:buttonTint="@color/colorAccent">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/card_feature_lift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/card_feature_tools"
+            android:layout_alignBottom="@id/card_feature_tools"
+            android:layout_alignStart="@id/card_price_value"
+            android:layout_marginStart="15dp"
+            android:text="@string/lift"
+            android:clickable="false"
+            android:textColor="@color/colorAccent"
+            android:buttonTint="@color/colorAccent">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/card_feature_ph1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_feature_tools"
+            android:layout_alignStart="@id/card_name"
+            android:text="@string/ditch"
+            android:clickable="false"
+            android:textColor="@color/colorAccent"
+            android:buttonTint="@color/colorAccent">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/card_feature_ph2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/card_feature_ph1"
+            android:layout_alignBottom="@id/card_feature_ph1"
+            android:layout_alignStart="@id/card_price_value"
+            android:layout_marginStart="15dp"
+            android:text="@string/climate"
+            android:clickable="false"
+            android:checked="true"
+            android:textColor="@color/colorAccent"
+            android:buttonTint="@color/colorAccent">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/card_feature_ph3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_feature_ph2"
+            android:layout_alignStart="@id/card_feature_ph1"
+            android:text="@string/security"
+            android:clickable="false"
+            android:textColor="@color/colorAccent"
+            android:buttonTint="@color/colorAccent">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/card_feature_ph4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/card_feature_ph3"
+            android:layout_alignBottom="@id/card_feature_ph3"
+            android:layout_alignStart="@id/card_price_value"
+            android:layout_marginStart="15dp"
+            android:text="@string/tireMount"
+            android:clickable="false"
+            android:textColor="@color/colorAccent"
+            android:buttonTint="@color/colorAccent">
+        </CheckBox>
+
+        <ToggleButton
+            android:id="@+id/card_favorite_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/card_feature_ph4"
+            android:layout_toStartOf="@id/card_favorite_view"
+            android:background="@drawable/toggle_button"
+            android:textOn=""
+            android:textOff=""
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/card_favorite_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/card_favorite_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/colorAccent"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
