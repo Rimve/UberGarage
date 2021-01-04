@@ -1,6 +1,9 @@
 # UberGarage Application
 
 This application lets the user temporarily rent out a nearby garage or one which has all the needed requirements.
+This was my first "bigger" application that I made for learning purposes and it was presented as a marketing assignment.
+Demonstrational/promotional video can be found here:
+https://www.youtube.com/watch?v=cJXxhEbtkq0&feature=youtu.be&ab_channel=Ranen
 # Appliaction features
 
 Add an offer
@@ -15,12 +18,12 @@ Add an offer
  - Select which options your offer has
  - Filter offers by attributes
  - See your offers
- - Preview offers
+ - Preview offer
  - Preview activity does not show imageView placeHolder if the offer has
    no images
  - Preview individual offer images
  - All around validation throughout the application
- - Uses room local database, can easily change to live MySQL
+ - Uses room local database (can easily be changed to a live database when needed)
 
 There are two database entities:
 
