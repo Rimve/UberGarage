@@ -3,7 +3,7 @@
 This application lets the user temporarily rent out a nearby garage or one which has all the needed requirements.
 This was my first "bigger" application that I made for learning purposes and it was presented as a marketing assignment.
 Demonstrational/promotional video can be found here:
-https://www.youtube.com/watch?v=cJXxhEbtkq0&feature=youtu.be&ab_channel=Ranen
+https://youtu.be/cJXxhEbtkq0?t=35
 # Appliaction features
 
 Add an offer
