@@ -4,6 +4,10 @@ This application lets the user temporarily rent out a nearby garage or one which
 This was my first "bigger" application that I made for learning purposes and it was presented as a marketing assignment.
 Demonstrational/promotional video can be found here:
 https://youtu.be/cJXxhEbtkq0?t=35
+
+# Demo
+![Demonstrational gif](https://github.com/Rimve/UberGarage/blob/master/app/ubergarageDemo.gif)
+
 # Appliaction features
 
 Add an offer
